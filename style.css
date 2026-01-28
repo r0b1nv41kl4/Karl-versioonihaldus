@@ -1,22 +1,20 @@
 :root{
-  --bg: rgba(0,0,0,.45);
-  --text: rgba(255, 255, 255,.92);
-  --muted: rgba(255,255,255,.65);
-  --shadow: rgba(0,0,0,.45);
-  --panel: rgba(255,255,255,.06)
+    --bg: #0b0f1a;
+    --text: rgba(255,255,255,.92);
+    --muted: rgba(255,255,255,.65);
+    --shadow: rgba(0,0,0,.45);
+    --panel: rgba(255,255,255,.06);
 }
-
-*{
-  box-sizing: border-box;
+*{ 
+    box-sizing: border-box;
 }
-
 body{
-  margin: 0;
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  color: var(--text);
-  background: black;
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    color: var(--text);
+    background: black;
 }
 .app{
     width: min(920px,92vw);
@@ -27,6 +25,7 @@ body{
     gap: 18px;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 18px;
 }
 h1{
     margin: 0 0 6px;
@@ -37,11 +36,11 @@ h1{
     margin: 0;
 }
 .stats{
-    display: flex;
-    gap: 12px;
+  display: flex;
+  gap: 12px;  
 }
 .stats{
-    background: var(--shadow);
+    background:  var(--shadow);
     border: 1px solid green;
     border-radius: 14px;
     padding: 10px 12px;
@@ -52,44 +51,45 @@ h1{
     color: var(--muted);
 }
 .value{
-    font: 26px;
+    font-size: 26px;
     font-weight: 700;
     margin-top: 2px;
 }
 .panel{
-  background: var(--panel);
-  border: 1px solid green;
-  border-radius: 18px;
-  padding: 22px
+    background: var(--panel);
+    border: 1px solid green;
+    border-radius: 18px;
+    padding: 22px;
 }
 .btn{
-  border: 0;
-  border-radius: 18px;
-  padding: 14px 18px;
-  font-size: 16px;
-  color: green;
-  cursor: pointer;
-  transition: transform .06s ease, filter .12s
+    border: 0;
+    border-radius: 18px;
+    padding: 14px 18px;
+    font-size: 16px;
+    color: green;
+    cursor: pointer;
+    transition: transform .06s ease, filter .12s ease;
 }
 #clickBtn{
-  width: 100%;
-  padding: 22px 18px;
-  font-size: 28px;
-  margin-bottom: 18px;
+    width: 100%;
+    padding: 22px 18px;
+    font-size: 28px;
+    margin-bottom: 18px;
 }
 .actions{
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 .toast{
-  padding: 10px 12px;
-  border-radius: 12px;
-  background: #0b0f1a;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: #0b0f1a;
+    border: 1px solid green;
 }
 
-.btn-a{background: blue};
-.btn-b{background: green};
-.btn-c{background: yellow};
-.btn-d{background: orangered};
-.btn-e{background: pink};
+.btn-a{background: blue;}
+.btn-b{background: green;}
+.btn-c{background: yellow;}
+.btn-d{background: orangered;}
+.btn-e{background: pink;}

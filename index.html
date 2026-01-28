@@ -1,50 +1,46 @@
+
 <!DOCTYPE html>
-<html lang="et"
+<html lang="et">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0"
-    <title>clicker</title>
-    <link rel="stylesheet" href="style.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main class="app">
         <header class="top">
             <div>
                 <h1>Clicker</h1>
-                <p class="subtitle">Pealkiri lmao</p>
+                <p class="subtitle">Siia mingi pealkiri</p>
             </div>
-            <div class="stats"
+            <div class="stats">
                 <div class="stat">
                     <div class="label">Skoor</div>
                     <div id="score" class="value">0</div>
                 </div>
                 <div class="stat">
                     <div class="label">Combo</div>
-                    <div id="score" class="value">x1</div>
+                    <div id="combo" class="value">x1</div>
                 </div>
             </div>
         </header>
         <section class="panel">
-            <button id="ClickBtn" class="btn btn-a"
+            <button id="clickBtn" class="btn btn-a"
                     aria-label="Lisa punkt">+1</button>
 
             <div class="actions">
-                <button id="powerBtn"
-                    class="btn secondary"
-                    title="topelt punkid">Power-up</button>
-                <button id="resetBtn"
-                    class="btn ghost"
-                    title="Nulli skoor">Reset</button>
+                <button id="powerBtn" 
+                        class="btn secondary" 
+                        title="topelt punktid">Power-up</button>
+                <button id="resetBtn" 
+                        class="btn ghost" 
+                        title="Nulli skoor">Reset</button>
             </div>
+            <div id="toast" class="toast"></div>
         </section>
 
     </main>
-
-
-
-
-    </main>
-
     <script src="app.js"></script>
 </body>
 </html>
