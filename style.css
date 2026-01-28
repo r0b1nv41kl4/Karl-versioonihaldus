@@ -82,3 +82,14 @@ h1{
   gap: 10px;
   flex-wrap: wrap;
 }
+.toast{
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #0b0f1a;
+}
+
+.btn-a{background: blue};
+.btn-b{background: green};
+.btn-c{background: yellow};
+.btn-d{background: orangered};
+.btn-e{background: pink};
